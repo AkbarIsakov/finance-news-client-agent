@@ -4,7 +4,7 @@
 |---|---|---|---|
 | **[Task 1](task1/README.md)** | NLP: компании, отрасль, события и цитируемость | [`task1/task1_pipeline.ipynb`](task1/task1_pipeline.ipynb) | `task1/results/news_predictions.csv` |
 | **[Task 2](task2/README.md)** | Агент RAG + OpenSearch + GigaChat → `.pptx` | [`task2/src/`](task2/src/) | `task2/examples/*.pptx` |
-| **[Task 3](task3/README.md)** | Валидация и A/B сравнения агента | [`task3/evaluation/`](task3/evaluation/) | `task3/results/prompt_comparison/comparison.html`; `task3/results/retrieval_comparison/comparison.html` |
+| **[Task 3](task3/README.md)** | Валидация и A/B сравнения агента | [`task3/evaluation/`](task3/evaluation/) | `task3/results/comparison_prompt/comparison.html`; `task3/results/comparison_retriever/comparison.html` |
 
 ## Организация проекта
 
