@@ -59,5 +59,3 @@ cd ../task3
 python -m evaluation.cli run --version baseline_demo --mode demo
 ```
 
-Инструкция по A/B: [task3/EXPERIMENTS.md](task3/EXPERIMENTS.md). [Схема архитектуры](docs/architecture.md) и [ход решений](docs/decisions.md). Инструкция по публикации: [GITHUB_SETUP.md](GITHUB_SETUP.md).
-
