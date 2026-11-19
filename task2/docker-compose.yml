@@ -1,0 +1,14 @@
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2.19.0
+    container_name: task2-opensearch
+    environment:
+      - discovery.type=single-node
+      - DISABLE_SECURITY_PLUGIN=true
+      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+volumes:
+  opensearch_data:

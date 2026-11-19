@@ -1,0 +1,34 @@
+{
+  "client": "Норникель",
+  "pptx": "/Users/akbarisakov/Desktop/client-presentation-agent/outputs/Норникель_20261119.pptx",
+  "mode": "gigachat-api",
+  "retrieval": "opensearch-bm25",
+  "products": [
+    {
+      "name": "Commodity Hedge",
+      "conditional": false,
+      "source_ids": [
+        "product:Commodity Hedge",
+        "note:Норникель"
+      ]
+    },
+    {
+      "name": "FX Forward",
+      "conditional": false,
+      "source_ids": [
+        "product:FX Forward",
+        "note:Норникель"
+      ]
+    },
+    {
+      "name": "Option Collar",
+      "conditional": false,
+      "source_ids": [
+        "product:Option Collar",
+        "note:Норникель"
+      ]
+    }
+  ],
+  "news": [],
+  "retrieved_news_count": 0
+}

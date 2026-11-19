@@ -1,0 +1,26 @@
+{
+  "version": "2026-11-task2-seed-v1",
+  "provenance": "Кураторская ограниченная разметка на основе clients.json, internal_notes.json и просмотра новостей из news.csv. Не полная независимая разметка всего массива.",
+  "clients": {
+    "РусГидро": {"products": {"IRS": 3, "FX Forward": 1, "Deposit": 1}, "conditional": ["FX Forward", "Structured Note"], "avoid": ["DCD"], "news_positive": [632, 921, 1114], "news_negative": [1315], "news_unjudged": [647, 1093]},
+    "Аэрофлот": {"products": {"FX Forward": 3, "Option Collar": 3, "Commodity Hedge": 3}, "conditional": [], "avoid": ["DCD", "Structured Note"], "news_positive": [478, 633, 657, 671, 1339], "news_negative": [218, 305, 326, 489, 1311, 1846, 1874], "news_unjudged": [736, 1003]},
+    "Норникель": {"products": {"Commodity Hedge": 3, "FX Forward": 3, "Option Collar": 2, "Deposit": 1}, "conditional": ["Deposit", "Prepaid Forward"], "avoid": ["DCD"], "news_positive": [], "news_negative": [], "news_unjudged": []},
+    "РЖД": {"products": {"IRS": 3, "Repo": 3, "Deposit": 2, "FX Forward": 1}, "conditional": ["FX Forward"], "avoid": ["Commodity Hedge"], "news_positive": [45, 1120], "news_negative": [], "news_unjudged": []},
+    "Магнит": {"products": {"Deposit": 3, "Repo": 3, "FX Forward": 1, "Structured Note": 1}, "conditional": ["FX Forward", "Structured Note"], "avoid": ["Commodity Hedge", "IRS"], "news_positive": [283], "news_negative": [1757], "news_unjudged": []},
+    "Лукойл": {"products": {"Commodity Hedge": 3, "FX Forward": 3, "XCCY": 2, "IRS": 1}, "conditional": ["IRS"], "avoid": ["DCD"], "news_positive": [1833], "news_negative": [221, 250, 1103], "news_unjudged": [735]},
+    "МТС": {"products": {"IRS": 3, "FX Forward": 3, "Deposit": 2, "Structured Note": 1}, "conditional": ["Deposit", "Structured Note"], "avoid": ["Commodity Hedge"], "news_positive": [], "news_negative": [1103], "news_unjudged": [242]},
+    "ФосАгро": {"products": {"FX Forward": 3, "Option Collar": 3, "Commodity Hedge": 3, "IRS": 1}, "conditional": ["IRS", "Structured Note"], "avoid": [], "news_positive": [], "news_negative": [], "news_unjudged": []}
+  },
+  "cases": [
+    {"id": "rusgidro", "request": "Подготовь презентацию о РусГидро", "client": "РусГидро"},
+    {"id": "aeroflot", "request": "Подготовь презентацию об Аэрофлоте", "client": "Аэрофлот"},
+    {"id": "nornickel", "request": "Собери презентацию о Норникеле", "client": "Норникель"},
+    {"id": "rzd", "request": "Подготовь презентацию о РЖД", "client": "РЖД"},
+    {"id": "magnit", "request": "Сделай краткую презентацию о Магните", "client": "Магнит"},
+    {"id": "lukoil", "request": "Презентация по Лукойлу", "client": "Лукойл"},
+    {"id": "mts", "request": "Подготовь презентацию по МТС", "client": "МТС"},
+    {"id": "phosagro", "request": "Подготовь презентацию о ФосАгро", "client": "ФосАгро"},
+    {"id": "unknown_client", "request": "Подготовь презентацию о неизвестной компании Парадокс", "expected_error": true},
+    {"id": "two_clients", "request": "Сделай презентацию о РЖД и МТС", "expected_error": true}
+  ]
+}

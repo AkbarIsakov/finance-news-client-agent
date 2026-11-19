@@ -1,0 +1,26 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Task 3 · Comparison</title>
+<style>body{font:16px system-ui,Arial,sans-serif;max-width:1100px;margin:36px auto;padding:0 24px;color:#1c2940}h1{font-size:28px}h2{margin-top:38px}table{border-collapse:collapse;width:100%}th,td{padding:12px;text-align:left;border-bottom:1px solid #dbe2ea}thead{background:#f2f5f9}.subtitle{color:#54667b}.verdict{font-size:21px;font-weight:bold}.small{font-size:13px;color:#54667b}code{background:#f2f5f9;padding:2px 4px;border-radius:3px}</style></head>
+<body><h1>Task 3 · Сравнение версий агента</h1>
+<p class="verdict">Вердикт: worse</p><p>У новой версии больше критических ошибок.</p>
+<p class="subtitle">Δ общего балла: -0.4977; парный bootstrap 95% CI: [-0.8704; -0.1250] · 8 клиентских тестов</p>
+<h2>Метрики</h2><table><thead><tr><th>Метрика</th><th>Baseline</th><th>Candidate</th><th>Δ</th></tr></thead><tbody><tr><td>score</td><td>0.9332</td><td>0.4355</td><td>-0.4977</td></tr>
+<tr><td>product_ndcg_at_3</td><td>0.9558</td><td>0.4635</td><td>-0.4923</td></tr>
+<tr><td>selected_news_precision_judged</td><td>0.7917</td><td>0.5833</td><td>-0.2084</td></tr>
+<tr><td>selected_news_known_recall</td><td>0.9600</td><td>0.9333</td><td>-0.0267</td></tr>
+<tr><td>retrieval_news_known_recall</td><td>1.0000</td><td>1.0000</td><td>0.0000</td></tr>
+<tr><td>pptx_valid_rate</td><td>1.0000</td><td>0.5000</td><td>-0.5000</td></tr>
+<tr><td>narrative_contract_rate</td><td>1.0000</td><td>0.5000</td><td>-0.5000</td></tr>
+<tr><td>critical_error_count</td><td>0</td><td>4</td><td>4</td></tr>
+<tr><td>wrong_known_news_count</td><td>3</td><td>3</td><td>0</td></tr></tbody></table>
+<h2>Сравнение по кейсам</h2><table><thead><tr><th>Кейс</th><th>Baseline</th><th>Candidate</th><th>Δ</th></tr></thead><tbody><tr><td>rusgidro</td><td>0.9816</td><td>0.0000</td><td>-0.9816</td></tr>
+<tr><td>aeroflot</td><td>0.9680</td><td>0.9680</td><td>0.0000</td></tr>
+<tr><td>nornickel</td><td>1.0000</td><td>0.0000</td><td>-1.0000</td></tr>
+<tr><td>rzd</td><td>1.0000</td><td>0.0000</td><td>-1.0000</td></tr>
+<tr><td>magnit</td><td>0.8745</td><td>0.8745</td><td>0.0000</td></tr>
+<tr><td>lukoil</td><td>0.8812</td><td>0.8812</td><td>0.0000</td></tr>
+<tr><td>mts</td><td>0.7600</td><td>0.7600</td><td>0.0000</td></tr>
+<tr><td>phosagro</td><td>1.0000</td><td>0.0000</td><td>-1.0000</td></tr>
+<tr><td>unknown_client</td><td>—</td><td>—</td><td>0</td></tr>
+<tr><td>two_clients</td><td>—</td><td>—</td><td>0</td></tr></tbody></table>
+
+<p class="small">Метрики качества на ограниченной контрольной разметке: не являются доказательством полной фактической точности. Бинарные проверки помогают обнаруживать технические регрессии; не заменяют экспертный просмотр готовых слайдов. При 8 клиентских кейсах доверительные интервалы могут быть широкими.</p></body></html>

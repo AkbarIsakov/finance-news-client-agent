@@ -1,0 +1,45 @@
+{
+  "client": "РЖД",
+  "pptx": "/Users/akbarisakov/Desktop/client-presentation-agent/outputs/РЖД_20261119.pptx",
+  "mode": "gigachat-api",
+  "retrieval": "opensearch-bm25",
+  "products": [
+    {
+      "name": "IRS",
+      "conditional": false,
+      "source_ids": [
+        "product:IRS",
+        "note:РЖД"
+      ]
+    },
+    {
+      "name": "Repo",
+      "conditional": false,
+      "source_ids": [
+        "product:Repo",
+        "note:РЖД"
+      ]
+    },
+    {
+      "name": "Deposit",
+      "conditional": false,
+      "source_ids": [
+        "product:Deposit",
+        "note:РЖД"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "IPO \"РЖД\" и \"Wildberries\" в ближайшие годы принести до $477 млрд потенциальной капитализации российскому рынку.",
+      "source": "https://t.me/s/headlines_for_traders",
+      "news_row": 45
+    },
+    {
+      "title": "В Хабаровском крае транспортная прокуратура обратилась в суд с требованием обязать ОАО «РЖД» оборудовать железнодорожные вокзалы необходимыми средствами для маломобильных пассажиров, — сообщает Дальневосточная транспортная прокуратура.",
+      "source": "https://hab.aif.ru/rss/googlearticles",
+      "news_row": 1120
+    }
+  ],
+  "retrieved_news_count": 2
+}
